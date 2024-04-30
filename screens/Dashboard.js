@@ -1,12 +1,23 @@
 // Dashboard.js
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 const Dashboard = () => {
     return (
         <View style={styles.container}>
-            <Text>Welcome to the Dashboard!</Text>
-            <Text>This is a dummy page for your dashboard display.</Text>
+            <View style={styles.row}>
+                <View style={styles.rowContainer}>
+                    <Image source={require('../assets/logo/logo.png')} style={styles.logo} />
+                    {/* <Text style={styles.subtitle}>Your journey is safe with us</Text> */}
+                </View>
+
+                <View style={styles.rowContainer}>
+                    <View style={styles.row}>
+                        <Image source={require('../assets/icon/dp.png')} style={styles.icon} />
+                        <Text style={styles.profileText}>Haziq Ruslan</Text>
+                    </View>
+                </View>
+            </View>
         </View>
     );
 };
@@ -14,9 +25,32 @@ const Dashboard = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        padding: 10,
+        backgroundColor: 'white',
+    },
+    rowContainer: {
+        flex: 1,
+        backgroundColor: 'white',
+    },
+    row: {
+        flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
-        padding: 20,
+        marginBottom: 10,
+    },
+    logo: {
+        width: 150,
+        height: 80,
+        marginTop: 10,
+        marginLeft:10,
+    },
+    icon: {
+        width: 40,
+        height: 40,
+        marginLeft: 60,
+    },
+    profileText: {
+        marginLeft: 10,
+        fontSize: 16,
     },
 });
 
