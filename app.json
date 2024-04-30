@@ -26,10 +26,16 @@
         "googleMaps": {
           "apiKey": "AIzaSyA0phsHnJo86BkKwP_-NSGBGgQawvVexJk"
         }
-      }
+      },
+      "package": "com.kwencyz.PlusDashboard"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "65b526ad-4f30-4f13-9b2f-2c8ce9968740"
+      }
     }
   }
 }
