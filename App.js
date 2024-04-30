@@ -6,6 +6,7 @@ import Dashboard from './screens/Dashboard';
 const Stack = createStackNavigator();
 
 export default function App() {
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Dashboard">
